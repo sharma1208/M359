@@ -68,7 +68,7 @@ public class Pizza {
     public String toString(){
         String output = "Store: " +  store;
         output += "Pizza inches: " + inches;
-        output += "Number of Toppings: " + numToppings;
+        output += "Number of Toppings: STUPID CHANGE" + numToppings;
         output += "Deep Dish Pizza: " + isDeepDish;
     }
 
