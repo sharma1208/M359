@@ -38,12 +38,12 @@ public class Review {
 
 
     public String toString() {
-        String output = reviewerName + ", " + businessName + ", " + rating + "/n";
+        String output = reviewerName + ", " + businessName + "," + rating + "\n";
         if(rating == 5){
-            output += "/t ** " + "Highly Recommended";
+            output += "\t ** " + "Highly Recommended \n";
         }
         else if (rating == 1){
-            output += "/t **" +  "Strongly Disccouraged";
+            output += "\t ** " +  "Strongly Discouraged \n";
         }
 
         return output;

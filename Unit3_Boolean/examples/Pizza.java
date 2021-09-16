@@ -70,6 +70,7 @@ public class Pizza {
         output += "Pizza inches: " + inches;
         output += "Number of Toppings: STUPID CHANGE" + numToppings;
         output += "Deep Dish Pizza: " + isDeepDish;
+        return output;
     }
 
     // .equals method: return true if both pizzas are equivalent, false otherwise
