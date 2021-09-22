@@ -77,9 +77,22 @@ public class Pizza {
     //if two pizzas are from the same store, then they are equal (for now)
 
     public boolean equals(Pizza other){
-        return(this.store.equals(other.store));
+        return(this.inches == other.inches);
     }
 
 
+    public int compareTo(Pizza other){
+        //return + if pizza is bigger, return - if pizza is smaller, 0 is equal
+        //long version
+        if(this.inches > other.inches){
+            return 1;
+        }else if(this.inches == other.inches){
+            return 0;
+        }else {
+            return -1;
+        }
+    }
+
+    // other version: return(this.inches - other.inches);
 }
 
