@@ -28,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunManager" selected="Application.StudentDriver">
     <configuration name="CompoundBooleanExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
