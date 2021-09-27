@@ -1,6 +1,6 @@
 package Unit3_Boolean.homework;
 
-public class CarDealershipLab {
+public class Chevy {
     //Vehicle instance variables, details
     private int year;
     private int mileage;
@@ -21,7 +21,7 @@ public class CarDealershipLab {
     final double FUEL_EFFICIENCY_DEDUCTION = 0.2;
 
     //Default Constructor
-    public CarDealershipLab() {
+    public Chevy() {
         year = 2021;
         mileage = 0;
         fuelEfficiency = 35;
@@ -34,7 +34,7 @@ public class CarDealershipLab {
     }
 
     //Full Constructor
-    public CarDealershipLab(int year, int mileage, double fuelEfficiency, int price, String model, String color, boolean luxuryPackageStatus, boolean a4WDStatus, boolean sportsPackageStatus) {
+    public Chevy(int year, int mileage, double fuelEfficiency, int price, String model, String color, boolean luxuryPackageStatus, boolean a4WDStatus, boolean sportsPackageStatus) {
         this.year = year;
         this.mileage = mileage;
         this.fuelEfficiency = fuelEfficiency;
@@ -47,12 +47,12 @@ public class CarDealershipLab {
     }
 
     // compareTo method
-    public int compareTo(CarDealershipLab other){
+    public int compareTo(Chevy other){
         return this.price - other.price;
     }
 
     // equals method
-    public boolean equals(CarDealershipLab other) {
+    public boolean equals(Chevy other) {
         boolean oldONewStatus1 = this.mileage < 200;
         boolean oldONewStatus2 = other.mileage < 200;
         if(this.model.equals(other.model) && this.color.equals(other.color) && oldONewStatus2 == oldONewStatus1) {
@@ -64,39 +64,41 @@ public class CarDealershipLab {
 
     //toString method
     public String toString() {
-        String output = year + " " + model + " ( " + color + " )";
-        output += "\n\t PRICE:\t\t$" + price;
-        output += "\n\t MILES:\t\t" + mileage;
+        String output = year + " " + VEHICLE_MAKE + " " + model + " (" + color + ")";
+        output += "\n\t PRICE:\t\t\t\t$" + price;
+        output += "\n\t MILES:\t\t\t\t" + mileage;
         output += "\n\t FUEL EFFICIENCY:\t" + fuelEfficiency + " mpg";
         output += "\n\t PACKAGES:\t\t";
         if (luxuryPackageStatus == true) {
-            output += "\n\t -Luxury Package";
+            output += "\n\t\t -Luxury Package";
         }
         if (a4WDStatus == true) {
-            output += "\n\t -4WD Package";
+            output += "\n\t\t -4WD Package";
         }
         if (sportsPackageStatus == true) {
-            output += "\n\t -Sports Package";
+            output += "\n\t\t -Sports Package";
         }
         if (luxuryPackageStatus == false && a4WDStatus == false && sportsPackageStatus == false) {
-            output += "\n\t -None";
+            output += "\n\t\t -None";
         }
         return output;
     }
 
     //calcPrice method
     public double calcPrice(){
+        int originalPrice = price;
         if(luxuryPackageStatus == true){
-            double extraCost = price * LUXURY_PRICE_INCREASE;
+            double extraCost = originalPrice * LUXURY_PRICE_INCREASE;
             price += extraCost;
         }
         if(a4WDStatus == true){
             price += PRICE_INCREASE_4WD;
         }
         if(sportsPackageStatus == true){
-            double sportsAdd = price * SPORTS_PRICE_INCREASE;
-            double fuelSubtract = price * FUEL_EFFICIENCY_DEDUCTION;
-            price += sportsAdd - fuelSubtract;
+            double sportsAdd = originalPrice * SPORTS_PRICE_INCREASE;
+            double fuelSubtract = fuelEfficiency * FUEL_EFFICIENCY_DEDUCTION;
+            fuelEfficiency -= fuelSubtract;
+            price += sportsAdd;
         }
         double withTax = price + (price * TAX_RATE);
         return withTax;
