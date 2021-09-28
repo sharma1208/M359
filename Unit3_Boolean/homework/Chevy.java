@@ -5,7 +5,7 @@ public class Chevy {
     private int year;
     private int mileage;
     private double fuelEfficiency;
-    private int price;
+    private double price;
     private String model;
     private String color;
     private boolean luxuryPackageStatus;
@@ -13,12 +13,12 @@ public class Chevy {
     private boolean sportsPackageStatus;
 
     //Constants
-    final String VEHICLE_MAKE = "Chevrolet";
-    final double TAX_RATE = .122;
-    final double LUXURY_PRICE_INCREASE = 0.2;
-    final int PRICE_INCREASE_4WD = 3500;
-    final double SPORTS_PRICE_INCREASE = .15;
-    final double FUEL_EFFICIENCY_DEDUCTION = 0.2;
+    final public static String VEHICLE_MAKE = "Chevrolet";
+    final public static double TAX_RATE = .122;
+    final public static double LUXURY_PRICE_INCREASE = 0.2;
+    final public static int PRICE_INCREASE_4WD = 3500;
+    final public static double SPORTS_PRICE_INCREASE = .15;
+    final public static double FUEL_EFFICIENCY_DEDUCTION = 0.2;
 
     //Default Constructor
     public Chevy() {
@@ -48,7 +48,14 @@ public class Chevy {
 
     // compareTo method
     public int compareTo(Chevy other){
-        return this.price - other.price;
+        double compareToNums = this.price - other.price;
+        if(compareToNums > 0) {
+            return 1;
+        }else if(compareToNums < 0){
+            return -1;
+        }else{
+            return 0;
+        }
     }
 
     // equals method
@@ -64,8 +71,9 @@ public class Chevy {
 
     //toString method
     public String toString() {
+        double postTaxPrice = this.calcPrice();
         String output = year + " " + VEHICLE_MAKE + " " + model + " (" + color + ")";
-        output += "\n\t PRICE:\t\t\t\t$" + price;
+        output += "\n\t PRICE:\t\t\t\t$" + postTaxPrice;
         output += "\n\t MILES:\t\t\t\t" + mileage;
         output += "\n\t FUEL EFFICIENCY:\t" + fuelEfficiency + " mpg";
         output += "\n\t PACKAGES:\t\t";
@@ -86,7 +94,7 @@ public class Chevy {
 
     //calcPrice method
     public double calcPrice(){
-        int originalPrice = price;
+        double originalPrice = price;
         if(luxuryPackageStatus == true){
             double extraCost = originalPrice * LUXURY_PRICE_INCREASE;
             price += extraCost;
@@ -128,7 +136,7 @@ public class Chevy {
         this.fuelEfficiency = fuelEfficiency;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 

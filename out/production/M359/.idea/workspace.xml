@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/CarDealershipLab.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/CarDealershipLab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/CarDealershipTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/CarDealershipTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/Chevy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/Chevy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunManager" selected="Application.ChevyDriverStudent">
@@ -115,5 +114,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit3_Boolean/homework/ChevyDriverStudent.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

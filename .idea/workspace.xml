@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/Chevy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/ChevyDriverStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/CarDealershipLab.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/CarDealershipTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/Chevy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/Chevy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit3_Boolean/homework/ChevyDriverStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Boolean/homework/ChevyDriverStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Boolean/homework/Chevy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Boolean/homework/Chevy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Boolean/homework/ChevyDriverStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Boolean/homework/ChevyDriverStudent.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
