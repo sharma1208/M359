@@ -22,6 +22,8 @@ public class ChevyDriverStudent {
         System.out.println("*** VEHICLE PRINTOUTS ***");
         System.out.println(traxBase);
         System.out.println(traxLux);
+        System.out.println(corvetteSport);
+        System.out.println(corvetteClassic);
 
 
         // Display price comparison
@@ -43,7 +45,7 @@ public class ChevyDriverStudent {
         System.out.print("\tStatus:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
-        if (traxBase.equals(traxBase) == true)
+        if (traxBase.equals(traxLux) == true)
             System.out.println("Same car");
         else
             System.out.println("Not same car");

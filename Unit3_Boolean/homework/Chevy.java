@@ -34,7 +34,7 @@ public class Chevy {
     }
 
     //Full Constructor
-    public Chevy(int year, int mileage, double fuelEfficiency, int price, String model, String color, boolean luxuryPackageStatus, boolean a4WDStatus, boolean sportsPackageStatus) {
+    public Chevy(int year, int mileage, double fuelEfficiency, double price, String model, String color, boolean luxuryPackageStatus, boolean a4WDStatus, boolean sportsPackageStatus) {
         this.year = year;
         this.mileage = mileage;
         this.fuelEfficiency = fuelEfficiency;
