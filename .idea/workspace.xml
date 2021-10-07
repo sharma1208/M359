@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/GuessNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes41.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Forloops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/examples/GuessNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/GuessNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Application.Notes41">
+  <component name="RunManager" selected="Application.Notes43StringAlgos">
     <configuration name="ChevyDriverStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit3_Boolean.homework.ChevyDriverStudent" />
       <module name="M359" />
@@ -47,12 +48,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompoundBooleanExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean.examples.CompoundBooleanExamples" />
+    <configuration name="Forloops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Forloops" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_Boolean.examples.*" />
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean.examples.ReviewTester" />
+    <configuration name="Notes43StringAlgos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Notes43StringAlgos" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_Boolean.examples.*" />
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notes43StringAlgos" />
+        <item itemvalue="Application.Forloops" />
         <item itemvalue="Application.Notes41" />
         <item itemvalue="Application.ChevyDriverStudent" />
         <item itemvalue="Application.StudentDriver" />
-        <item itemvalue="Application.CompoundBooleanExamples" />
-        <item itemvalue="Application.ReviewTester" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +140,19 @@
           <properties class="java.lang.ArithmeticException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
+          <line>3</line>
+          <properties class="Unit4_Iteration.examples.Notes43StringAlgos" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

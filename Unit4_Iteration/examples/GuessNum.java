@@ -10,8 +10,16 @@ public class GuessNum {
         while(guessedNum == false){
             System.out.println("Guess a number 1-10");
             int guess = input.nextInt();
-            if(rndNum
+            if(rndNum > guess){
+                System.out.println("You're guess is too low");
+                numGuesses++;
+            } else if(rndNum < guess){
+                System.out.println("you're guess is too high");
+                numGuesses++;
+            } else{
+                numGuesses++;
+                System.out.println("You're guess was correct! It took: " + numGuesses + "guesses for you to get it right!");
             }
         }
-    }
+            }
 }
