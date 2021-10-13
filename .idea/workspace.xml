@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Forloops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes44CodeAnalysis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/examples/GuessNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/GuessNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Application.Notes43StringAlgos">
+  <component name="RunManager" selected="Application.Notes44CodeAnalysis">
     <configuration name="ChevyDriverStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit3_Boolean.homework.ChevyDriverStudent" />
       <module name="M359" />
@@ -87,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean.examples.StudentDriver" />
+    <configuration name="Notes44CodeAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Notes44CodeAnalysis" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_Boolean.examples.*" />
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notes44CodeAnalysis" />
         <item itemvalue="Application.Notes43StringAlgos" />
         <item itemvalue="Application.Forloops" />
         <item itemvalue="Application.Notes41" />
         <item itemvalue="Application.ChevyDriverStudent" />
-        <item itemvalue="Application.StudentDriver" />
       </list>
     </recent_temporary>
   </component>
