@@ -7,7 +7,24 @@ public class PigLatin {
     }
 
     public static String translateWordToPigLatin(String word){
+        boolean firstChar = startsWithVowel(word);
+        if(startsWithVowel(word)){
+            word += "yay";
+            return word;
+        }else{
+            //when consonant or starts with y
+            if(startsWithVowel(word.substring(1,2)) == true){
+                
 
+            }else{
+                String firstLetter = word.substring(0,1);
+                String newWord = word.substring(1);
+                word = newWord + firstLetter + "ay";
+
+
+            }
+
+        }
 
     }
 
@@ -19,14 +36,7 @@ public class PigLatin {
             return false;
         }
     }
-   //return true of false if the starts with Y
-    public static boolean startsWithY(String word){
-        if(word.substring(0,1).equals("y")){
-            return true;
-        }else{
-            return false; 
-        }
-    }
+
 
 
 
