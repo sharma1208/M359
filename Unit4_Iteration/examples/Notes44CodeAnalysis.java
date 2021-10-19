@@ -19,21 +19,21 @@ public class Notes44CodeAnalysis {
     }
 
     //Challenge 3
-    everyOtherLetterPyramid("FremdVikings");
 
-}
 
-    public static void everyOtherLetterPyramid(String letters){
-        String current  = letters;
+
+
+    public static void everyOtherLetterPyramid(String letters) {
+        String current = letters;
         System.out.println(current);
-        while(current.length() > 1){
+        while (current.length() > 1) {
             String updated = "";
-            for(int i = 0; i < current.length(); i +=2){
-                updated += letters.substring(i,i+1);
+            for (int i = 0; i < current.length(); i += 2) {
+                updated += letters.substring(i, i + 1);
             }
             current = updated;
             System.out.println(current);
         }
-    }
+    }}
 
 
