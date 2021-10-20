@@ -2,7 +2,6 @@ package Unit4_Iteration.homework;
 
 public class PigLatinTester {
         public static void main(String[] args) {
-
             String phrase1 = "The black cat ate a red apple";
             String phrase2 = "Writing college essays is driving me crazy";
             String phrase3 = "Everyone loves to code in Java";
