@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java" afterDir="false" />
-    </list>
+    <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +150,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
           <line>3</line>
-          <properties class="Unit4_Iteration.examples.Notes43StringAlgos" method="main">
+          <properties class="Unit4_Iteration.examples.Notes43StringAlgos">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />

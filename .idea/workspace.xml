@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatinTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes44CodeAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes44CodeAnalysis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Notes44CodeAnalysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Notes44CodeAnalysis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/homework/PigLatin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/homework/PigLatin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,15 +152,10 @@
           <line>6</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
           <line>3</line>
-          <properties class="Unit4_Iteration.examples.Notes43StringAlgos" method="main">
+          <properties class="Unit4_Iteration.examples.Notes43StringAlgos">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
