@@ -1,6 +1,7 @@
 package Unit4_Iteration.homework;
 
 public class PigLatin {
+    //takes in a sentence and returns it translated
     public static String toPigLatin(String sentence){
         String lowerCaseSentence = sentence.toLowerCase();
         // String to store our translated sentence
@@ -15,13 +16,12 @@ public class PigLatin {
         }
         //translate the last word and add it to the translated sentence
         toPig += translateWordToPigLatin(lowerCaseSentence);
-
+        //return translated word
         return toPig.substring(0,1).toUpperCase() + toPig.substring(1);
 
     }
-
-
-
+    //returns a tranlsated word of a sentence and sends it to the pig latin method to be stored in
+    //a variable
     public static String translateWordToPigLatin(String word){
         //if its a vowel, add yay to the end of the word
         if(startsWithVowel(word)){
@@ -36,7 +36,6 @@ public class PigLatin {
                 String restWord = word.substring(2);
                 word = restWord + firstTwoLetters + "ay";
                 return word;
-
             }else{
                 //when there is one consonant or a y that starts the sentence,
                 //move the consonant to the back and add ay.
@@ -44,26 +43,19 @@ public class PigLatin {
                 String newWord = word.substring(1);
                 word = newWord + firstLetter + "ay";
                 return word;
-
-
             }
 
         }
 
     }
 
-    //return true if the word starts with a vowel, else false
+    //return true if the word starts with a vowel, else false: helper method to determine how to translate
     public static boolean startsWithVowel(String word){
-        if(word.substring(0,1).equals("a") || word.substring(0,1).equals("e") || word.substring(0,1).equals( "i" )|| word.substring(0,1).equals("o" )|| word.substring(0,1).equals("u") ){
+        if(word.substring(0,1).equals("a") || word.substring(0,1).equals("e") || word.substring(0,1).equals( "i" )||
+                word.substring(0,1).equals("o" )|| word.substring(0,1).equals("u") ){
             return true;
         }else{
             return false;
         }
     }
-
-
-
-
-
-
 }
