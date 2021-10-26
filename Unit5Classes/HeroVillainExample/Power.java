@@ -1,4 +1,4 @@
-package Unit5Examples.HeroVillanExample;
+package Unit5Classes.HeroVillainExample;
 
 public class Power {
     private String power;
@@ -10,7 +10,7 @@ public class Power {
     }
 
     public String toString(){
-        return "power: " + power +  "strength: " + powerStrength;
+        return "power:" + power +  " strength:" + powerStrength;
     }
     public String getPower() {
         return power;

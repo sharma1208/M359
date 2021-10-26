@@ -1,4 +1,6 @@
-package Unit5Examples.HeroVillanExample;
+package Unit5Classes.HeroVillainExample;
+
+import Unit5Classes.HeroVillainExample.Power;
 
 public class Villain {
 
@@ -15,7 +17,7 @@ public class Villain {
     }
 
     public String  toString(){
-        return "name: " + villainName + "super power: " + superPower.toString();
+        return "villain name:" + villainName + "\n " + superPower.toString();
 
     }
     public void setVillainName(String villainName) {

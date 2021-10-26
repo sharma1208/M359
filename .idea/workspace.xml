@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/MarvelMovieTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/Power.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/SuperHero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/Villain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/homework/PigLatin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/MarvelMovieTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/homework/PigLatin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/homework/PigLatin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Application.PigLatinTester">
+  <component name="RunManager" selected="Application.MarvelMovieTester">
     <configuration name="Forloops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Forloops" />
       <module name="M359" />
@@ -59,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Notes41" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Notes41" />
+    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5Classes.HeroVillainExample.MarvelMovieTester" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="PATTERN" value="Unit5Classes.HeroVillainExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.PigLatinTester" />
         <item itemvalue="Application.Notes44CodeAnalysis" />
         <item itemvalue="Application.Notes43StringAlgos" />
         <item itemvalue="Application.Forloops" />
-        <item itemvalue="Application.Notes41" />
       </list>
     </recent_temporary>
   </component>
