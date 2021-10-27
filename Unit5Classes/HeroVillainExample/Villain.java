@@ -9,7 +9,7 @@ public class Villain {
 
     public Villain(String villainName, Power superPower) {
         this.villainName = villainName;
-        this.superPower = superPower;
+        this.superPower = new Power(superPower.getPower(), superPower.getPowerStrength() );
     }
 
     public String getVillainName() {
