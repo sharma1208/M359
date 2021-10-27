@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/MarvelMovieTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Examples/HeroVillanExample/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/homework/PigLatin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/homework/PigLatin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit5Classes/HeroVillainExample/Villain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit5Classes/HeroVillainExample/Villain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

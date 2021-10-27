@@ -25,8 +25,7 @@ public class Villain {
     }
 
     public Power getSuperPower() {
-        return superPower;
-    }
+        return superPower;}
 
     public void setSuperPower(Power superPower) {
         this.superPower = superPower;
