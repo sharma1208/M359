@@ -29,6 +29,7 @@ public class SuperHero {
         this.heroName = heroName;
     }
 
+
     public Power getSuperPower() {
         return superPower;
     }

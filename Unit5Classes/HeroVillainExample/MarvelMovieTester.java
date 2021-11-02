@@ -42,7 +42,7 @@ public class MarvelMovieTester {
             hPower += 0.10 * vPower;
             vPower -= randomNum * 0.01;
             System.out.println("Hero wins! \n hero strength: " + hPower + "\n villain strength: " + vPower);
-                
+
         }else if(hPower < vPower){
             vPower += 0.10 * vPower;
             hPower -= randomNum* 0.01;
