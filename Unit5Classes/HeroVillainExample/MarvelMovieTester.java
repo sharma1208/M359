@@ -5,8 +5,13 @@ public class MarvelMovieTester {
         Power superSpeed = new Power("speed", 10);
         //putting the superSpeed power object inside of the superhero object to be applied
         //to the superhero
+
+        System.out.println(SuperHero.getNumHeroes());
+        System.out.println(SuperHero.getTotalStrength());
         SuperHero flash = new SuperHero("Flash", superSpeed);
         System.out.println(flash.toString()); //
+        System.out.println(SuperHero.getNumHeroes());
+        System.out.println(SuperHero.getTotalStrength());
 
         Villain mephisto = new Villain("Mephisto", superSpeed);
         System.out.println(mephisto); //no need for toString
@@ -22,7 +27,7 @@ public class MarvelMovieTester {
         //mephisto's power changes flash's power too and vise versa.
         System.out.println(flash.toString());
         System.out.println(mephisto);
-
+        battle(flash,mephisto);
     }
 
     /**
@@ -46,11 +51,17 @@ public class MarvelMovieTester {
         }else if(hPower < vPower){
             vPower += 0.10 * vPower;
             hPower -= randomNum* 0.01;
+            System.out.println("Villain wins! \n villain strength: " + vPower  + "\n hero strength: " + hPower);
 
         }else{
-            hPower -= randomNum;
-            vPower -= randomNum;
+            // get rand num between 5 and 35
+            double rndNum =(int)(Math.random()*31) + 5;
+            hPower -= rndNum * 0.01 * hPower;
 
+            rndNum =(int)(Math.random()*31) + 5;
+            vPower -= rndNum * 0.01 * vPower;
+
+          System.out.println("Tie! \n hero strength: " + hPower + "\n villain strength: " + vPower);
         }
 
         hero.getSuperPower().setPowerStrength(hPower);

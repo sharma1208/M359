@@ -1,6 +1,6 @@
 package Unit5Examples.homework;
 
-public class Meals(){
+/*public class Meals(){
     //Private instance variables
     private String mealName;
     private NutritionalLabel facts;
@@ -43,3 +43,4 @@ public class Meals(){
     }
 
 }
+*/

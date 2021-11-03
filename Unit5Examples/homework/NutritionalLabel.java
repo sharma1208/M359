@@ -1,6 +1,6 @@
 package Unit5Examples.homework;
 
-public class NutritionalLabel{
+/*public class NutritionalLabel{
     //instance variables
     private double servingSize;
     private double calories;
@@ -23,7 +23,8 @@ public class NutritionalLabel{
      *returns the layout for the information stored
      *within the 3 instance variables
      *int servingSize, int calories, int sugarInGrams
-     */
+
+
     public String toString(){
         return "Calories: " + calories + "\n"+ "Serving Size: " + servingSize + "\n" + "Sugar In Grams: " + sugarInGrams;
     }
@@ -70,3 +71,4 @@ public class NutritionalLabel{
     }
 
 }
+*/

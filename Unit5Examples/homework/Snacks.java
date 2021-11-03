@@ -1,6 +1,6 @@
 package Unit5Examples.homework;
 
-public class Snacks{
+/* public class Snacks{
 
     private String snackName;
     private NutritionalLabel facts;
@@ -54,3 +54,4 @@ public class Snacks{
 
 
 }
+*/

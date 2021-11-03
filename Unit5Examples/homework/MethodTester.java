@@ -1,6 +1,6 @@
 package Unit5Examples.homework;
 
-public class MethodTester {
+/* public class MethodTester {
     public static void main(String[] args){
 
 
@@ -9,7 +9,7 @@ public class MethodTester {
 
 //snack
 
-
+*/
 
 /**
  * This method returns the name of the food that is *healthier between a meal and a snack
@@ -21,7 +21,7 @@ public class MethodTester {
  * @param snack
  */
 
-        public static void whichIsHealthier(Meals meal, Snacks snack){
+        /*public static void whichIsHealthier(Meals meal, Snacks snack){
             if (meal.getMealHealthRating() > snack.getSnackHealthRating()){
                 System.out.println("The meal " + meal.getMealName() + "is healthier than " + snack.getSnackName())
             }else if(meal.getMealHealthRating() < snack.getSnackHealthRating()){
@@ -33,3 +33,4 @@ public class MethodTester {
 
     }
 }
+*/
