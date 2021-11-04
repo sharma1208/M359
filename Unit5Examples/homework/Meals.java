@@ -1,6 +1,6 @@
 package Unit5Examples.homework;
 
-/*public class Meals(){
+public class Meals{
     //Private instance variables
     private String mealName;
     private NutritionalLabel facts;
@@ -9,7 +9,7 @@ package Unit5Examples.homework;
 
     public Meals(String name, NutritionalLabel labelFacts){
         mealName = name;
-        facts = new NutritionalLabel(NutritionalLabel.getCalories(), NutritionalLabel.getServingSize(), NutritionalLabel.getSugarInGrams());
+        facts = new NutritionalLabel(facts.getServingSize(), facts.getCalories(), facts.getSugarInGrams());
     }
 
     // Getters & setters for the name of the meal
@@ -31,11 +31,11 @@ package Unit5Examples.homework;
     }
     //health rating ranges from 0-3
     public int getMealHealthRating(){
-        if(caloriesPerServing == REC_CALORIES_PER_MEAL && sugarPerServing == REC_SUGAR_PER_MEAL){
+        if(facts.getCaloriesPerServing() == REC_CALORIES_PER_MEAL && facts.getSugarPerServing()== REC_SUGAR_PER_MEAL){
             return 3;
-        }else if (caloriesPerServing < REC_CALORIES_PER_MEAL && sugarPerServing < REC_SUGAR_PER_MEAL){
+        }else if (facts.getCaloriesPerServing()< REC_CALORIES_PER_MEAL && facts.getSugarPerServing() < REC_SUGAR_PER_MEAL){
             return 2;
-        }else if(caloriesPerServing < REC_CALORIES_PER_MEAL || sugarPerServing < REC_SUGAR_PER_MEAL){
+        }else if(facts.getCaloriesPerServing() < REC_CALORIES_PER_MEAL || facts.getSugarPerServing() < REC_SUGAR_PER_MEAL){
             return 1;
         }else{
             return 0;
@@ -43,4 +43,5 @@ package Unit5Examples.homework;
     }
 
 }
-*/
+
+

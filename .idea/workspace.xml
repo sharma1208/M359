@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/Meals.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/Meals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" afterDir="false" />
@@ -45,13 +42,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Application.MarvelMovieTester">
-    <configuration name="Forloops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Forloops" />
+  <component name="RunManager" selected="Application.MethodTester">
+    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5Classes.HeroVillainExample.MarvelMovieTester" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="PATTERN" value="Unit5Classes.HeroVillainExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit5Classes.HeroVillainExample.MarvelMovieTester" />
+    <configuration name="MethodTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5Examples.homework.MethodTester" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit5Classes.HeroVillainExample.*" />
+          <option name="PATTERN" value="Unit5Examples.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MethodTester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.PigLatinTester" />
         <item itemvalue="Application.Notes44CodeAnalysis" />
         <item itemvalue="Application.Notes43StringAlgos" />
-        <item itemvalue="Application.Forloops" />
       </list>
     </recent_temporary>
   </component>

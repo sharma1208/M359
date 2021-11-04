@@ -1,15 +1,21 @@
 package Unit5Examples.homework;
 
-/* public class MethodTester {
-    public static void main(String[] args){
+ public class MethodTester {
+    public static void main(String[] args) {
 
 
 //meal
+        NutritionalLabel burgerFacts = new NutritionalLabel(2, 540, 5);
+        Meals hamburger = new Meals("Hamburger", burgerFacts);
 
 
 //snack
+        NutritionalLabel goldfishFacts = new NutritionalLabel(1, 120, 0);
+        Snacks goldfish = new Snacks("Goldfish", goldfishFacts);
 
-*/
+        whichIsHealthier(hamburger,goldfish);
+    }
+
 
 /**
  * This method returns the name of the food that is *healthier between a meal and a snack
@@ -21,16 +27,15 @@ package Unit5Examples.homework;
  * @param snack
  */
 
-        /*public static void whichIsHealthier(Meals meal, Snacks snack){
+        public static void whichIsHealthier (Meals meal, Snacks snack){
             if (meal.getMealHealthRating() > snack.getSnackHealthRating()){
-                System.out.println("The meal " + meal.getMealName() + "is healthier than " + snack.getSnackName())
+                System.out.println("The meal " + meal.getName() + "is healthier than " + snack.getSnackName());
             }else if(meal.getMealHealthRating() < snack.getSnackHealthRating()){
-                System.out.println("The snack " + snack.getSnackName() + "is healthier than " + meal.getMealName())
+                System.out.println("The snack " + snack.getSnackName() + "is healthier than " + meal.getName());
             }else{
                 System.out.println("They are both equally healthy.");
             }
         }
 
     }
-}
-*/
+

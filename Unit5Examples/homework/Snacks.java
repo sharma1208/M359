@@ -1,6 +1,6 @@
 package Unit5Examples.homework;
 
-/* public class Snacks{
+ public class Snacks{
 
     private String snackName;
     private NutritionalLabel facts;
@@ -9,7 +9,7 @@ package Unit5Examples.homework;
 
     public Snacks(String name, NutritionalLabel facts){
         name = snackName;
-        facts = new NutrionalLabel(facts.getServingSize(), facts.getCalories(), facts.getsugarInGrams());
+        facts = new NutritionalLabel (facts.getServingSize(), facts.getCalories(), facts.getSugarInGrams());
     }
 
     public String getSnackName(){
@@ -29,11 +29,11 @@ package Unit5Examples.homework;
     }
 
     public int getSnackHealthRating(){
-        if(caloriesPerServing == REC_CALORIES_PER_SNACK && sugarPerServing == REC_SUGAR_PER_MEAL){
+        if(facts.getCaloriesPerServing() == REC_CALORIES_PER_SNACK && facts.getSugarPerServing()== REC_SUGAR_PER_SNACK){
             return 3;
-        }else if (caloriesPerServing < REC_CALORIES_PER_SNACK && sugarPerServing < REC_SUGAR_PER_SNACK){
+        }else if (facts.getCaloriesPerServing()  < REC_CALORIES_PER_SNACK && facts.getSugarPerServing() < REC_SUGAR_PER_SNACK){
             return 2;
-        }else if(caloriesPerServing < REC_CALORIES_PER_SNACK || sugarPerServing < REC_SUGAR_PER_MEAL){
+        }else if(facts.getCaloriesPerServing()  < REC_CALORIES_PER_SNACK || facts.getSugarPerServing() < REC_SUGAR_PER_SNACK){
             return 1;
         }else{
             return 0;
@@ -54,4 +54,3 @@ package Unit5Examples.homework;
 
 
 }
-*/
