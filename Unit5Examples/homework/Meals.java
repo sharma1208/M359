@@ -8,12 +8,12 @@ public class Meals{
     final public static int REC_SUGAR_PER_MEAL = 8;
 
     public Meals(String name, NutritionalLabel labelFacts){
-        mealName = name;
-        facts = new NutritionalLabel(facts.getServingSize(), facts.getCalories(), facts.getSugarInGrams());
+        this.mealName = name;
+        this.facts = new NutritionalLabel(labelFacts.getServingSize(), labelFacts.getCalories(), labelFacts.getSugarInGrams());
     }
 
     // Getters & setters for the name of the meal
-    public String getName() {
+    public String getMealName() {
         return mealName;
     }
 

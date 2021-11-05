@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/Meals.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/Meals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,6 +151,11 @@
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
           <line>6</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>

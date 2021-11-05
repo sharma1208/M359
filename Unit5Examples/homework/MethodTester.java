@@ -10,7 +10,7 @@ package Unit5Examples.homework;
 
 
 //snack
-        NutritionalLabel goldfishFacts = new NutritionalLabel(1, 120, 0);
+        NutritionalLabel goldfishFacts = new NutritionalLabel(1, 300, 4);
         Snacks goldfish = new Snacks("Goldfish", goldfishFacts);
 
         whichIsHealthier(hamburger,goldfish);
@@ -29,9 +29,9 @@ package Unit5Examples.homework;
 
         public static void whichIsHealthier (Meals meal, Snacks snack){
             if (meal.getMealHealthRating() > snack.getSnackHealthRating()){
-                System.out.println("The meal " + meal.getName() + "is healthier than " + snack.getSnackName());
+                System.out.println("The meal " + meal.getMealName() + " is healthier than " + snack.getSnackName().toLowerCase());
             }else if(meal.getMealHealthRating() < snack.getSnackHealthRating()){
-                System.out.println("The snack " + snack.getSnackName() + "is healthier than " + meal.getName());
+                System.out.println("The snack " + snack.getSnackName() + " is healthier than " + meal.getMealName());
             }else{
                 System.out.println("They are both equally healthy.");
             }
