@@ -4,8 +4,9 @@ package Unit5Examples.homework;
 
     private String snackName;
     private NutritionalLabel facts;
-    final public static int REC_CALORIES_PER_SNACK= 300;
+    final public static int REC_CALORIES_PER_SNACK= 150;
     final public static int REC_SUGAR_PER_SNACK = 4;
+    private static int totalSnackCals = 0;
 
     public Snacks(String name, NutritionalLabel labelFacts){
         snackName = name;
