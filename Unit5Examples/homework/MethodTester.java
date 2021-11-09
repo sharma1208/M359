@@ -5,7 +5,7 @@ package Unit5Examples.homework;
 
 
 //meal
-         NutritionalLabel burgerFacts = new NutritionalLabel(2, 540, 3);
+         NutritionalLabel burgerFacts = new NutritionalLabel(2, 2000, 3);
          Meals hamburger = new Meals("Hamburger", burgerFacts);
 
 
@@ -15,6 +15,7 @@ package Unit5Examples.homework;
 
          whichIsHealthier(hamburger, goldfish);
          greaterSugar(hamburger, goldfish);
+         compareCalories(hamburger, goldfish);
      }
 
 
@@ -46,6 +47,20 @@ package Unit5Examples.homework;
              System.out.println("The snack " + snack.getSnackName() + " has more sugar than the meal.");
          }else{
              System.out.println("They are equal in sugar");
+         }
+     }
+
+     public static void compareCalories(Meals meal, Snacks snack){
+         int recCalsADay = 2000;
+         int caloriesTotal = meal.getTotalMealCals() + snack.getTotalSnackCals();
+         int caloriesToEat = recCalsADay - caloriesTotal;
+         int caloriesYouAte = Math.abs(caloriesTotal - recCalsADay);
+         if(caloriesTotal == recCalsADay){
+             System.out.println("You are eating a sufficient amount of calories per day!");
+         }else if(recCalsADay > caloriesTotal){
+             System.out.println("You need to eat " + caloriesToEat + " more calories.");
+         }else{
+             System.out.println("You ate " + caloriesYouAte + " more calories than recommended");
          }
      }
  }

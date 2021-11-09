@@ -11,6 +11,7 @@ package Unit5Examples.homework;
     public Snacks(String name, NutritionalLabel labelFacts){
         snackName = name;
         facts = new NutritionalLabel (labelFacts.getServingSize(), labelFacts.getCalories(), labelFacts.getSugarInGrams());
+        totalSnackCals += labelFacts.getCalories();
     }
 
     public String getSnackName(){
@@ -41,17 +42,7 @@ package Unit5Examples.homework;
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+     public static int getTotalSnackCals() {
+         return totalSnackCals;
+     }
+ }

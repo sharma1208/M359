@@ -6,10 +6,12 @@ public class Meals{
     private NutritionalLabel facts;
     final public static int REC_CALORIES_PER_MEAL= 600;
     final public static int REC_SUGAR_PER_MEAL = 8;
+    private static int totalMealCals = 0;
 
     public Meals(String name, NutritionalLabel labelFacts){
         this.mealName = name;
         this.facts = new NutritionalLabel(labelFacts.getServingSize(), labelFacts.getCalories(), labelFacts.getSugarInGrams());
+        totalMealCals += labelFacts.getCalories();
     }
 
     // Getters & setters for the name of the meal
@@ -42,6 +44,9 @@ public class Meals{
         }
     }
 
+    public static int getTotalMealCals() {
+        return totalMealCals;
+    }
 }
 
 
