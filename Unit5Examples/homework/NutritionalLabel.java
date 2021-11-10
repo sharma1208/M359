@@ -24,9 +24,8 @@ public class NutritionalLabel{
      *within the 3 instance variables
      *int servingSize, int calories, int sugarInGrams
 */
-
     public String toString(){
-        return "Calories: " + calories + "\n"+ "Serving Size: " + servingSize + "\n" + "Sugar In Grams: " + sugarInGrams;
+        return "Calories: " + calories + "\n"+ "Serving Size: " + servingSize + " cups" + "\n" + "Sugar In Grams: " + sugarInGrams + " g";
     }
 
     //getters and setters for all of the instance variables

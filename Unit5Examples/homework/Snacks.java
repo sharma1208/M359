@@ -30,6 +30,11 @@ package Unit5Examples.homework;
         facts = newFacts;
     }
 
+     /**
+      * This method takes in both the getCaloriesPerServing and the getSugarPerServing
+      * Then the method compares them and returns the RATING OF THE SNACK between 1-3
+      * @return
+      */
     public int getSnackHealthRating(){
         if(facts.getCaloriesPerServing() == REC_CALORIES_PER_SNACK && facts.getSugarPerServing()== REC_SUGAR_PER_SNACK){
             return 3;

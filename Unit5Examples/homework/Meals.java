@@ -32,6 +32,12 @@ public class Meals{
         facts = newFacts;
     }
     //health rating ranges from 0-3
+
+    /**
+     * This method takes in both the getCaloriesPerServing and the getSugarPerServing
+     * Then the method compares them and returns the RATING OF THE MEAL between 1-3
+     * @return
+     */
     public int getMealHealthRating(){
         if(facts.getCaloriesPerServing() == REC_CALORIES_PER_MEAL && facts.getSugarPerServing()== REC_SUGAR_PER_MEAL){
             return 3;
