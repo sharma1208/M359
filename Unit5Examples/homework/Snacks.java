@@ -7,9 +7,11 @@ package Unit5Examples.homework;
     final public static int REC_CALORIES_PER_SNACK= 150;
     final public static int REC_SUGAR_PER_SNACK = 4;
     private static int totalSnackCals = 0;
+     public static final String BLACK = "\033[40m";  // BLACK
+     public static final String RESET = "\033[0m";     //RESET
 
     public Snacks(String name, NutritionalLabel labelFacts){
-        snackName = name;
+        snackName = BLACK + name + RESET;
         facts = new NutritionalLabel (labelFacts.getServingSize(), labelFacts.getCalories(), labelFacts.getSugarInGrams());
         totalSnackCals += labelFacts.getCalories();
     }

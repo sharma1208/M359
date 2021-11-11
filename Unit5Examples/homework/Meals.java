@@ -7,9 +7,11 @@ public class Meals{
     final public static int REC_CALORIES_PER_MEAL= 600;
     final public static int REC_SUGAR_PER_MEAL = 8;
     private static int totalMealCals = 0;
+    public static final String BLACK = "\033[40m";  // BLACK
+    public static final String RESET = "\033[0m";     //RESET
 
     public Meals(String name, NutritionalLabel labelFacts){
-        this.mealName = name;
+        this.mealName = BLACK + name + RESET;
         this.facts = new NutritionalLabel(labelFacts.getServingSize(), labelFacts.getCalories(), labelFacts.getSugarInGrams());
         totalMealCals += labelFacts.getCalories();
     }

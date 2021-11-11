@@ -1,11 +1,7 @@
 package Unit5Examples.homework;
 
  public class MethodTester {
-     public static final String YELLOW = "\033[0;33m";  // YELLOW
-     public static final String BLUE = "\033[0;34m";    // BLUE
      public static void main(String[] args) {
-
-
 //meal
          NutritionalLabel burgerFacts = new NutritionalLabel(2, 2000, 3);
          Meals hamburger = new Meals("Hamburger", burgerFacts);
@@ -40,7 +36,7 @@ package Unit5Examples.homework;
       */
 
      public static void whichIsHealthier(Meals meal, Snacks snack) {
-         System.out.println("WHICH ONE IS HEALTHIER?");
+         System.out.println();
          if (meal.getMealHealthRating() > snack.getSnackHealthRating()) {
              System.out.println("The " + meal.getMealName() + " is healthier than " + snack.getSnackName());
          } else if (meal.getMealHealthRating() < snack.getSnackHealthRating()) {
@@ -58,7 +54,9 @@ package Unit5Examples.homework;
       * @param snack
       */
      public static void greaterSugar(Meals meal, Snacks snack){
-         System.out.println("WHICH HAS MORE SUGAR?");
+         String YELLOW = "\033[0;33m";
+         String RESET = "\033[0m";  // Text Reset
+         System.out.println(YELLOW + "WHICH HAS MORE SUGAR?" + RESET);
          if(meal.getFacts().getSugarInGrams() > snack.getFacts().getSugarInGrams()){
              System.out.println("The " + meal.getMealName() + " has more sugar than the snack.");
          }else if(meal.getFacts().getSugarInGrams() < snack.getFacts().getSugarInGrams()){
@@ -78,7 +76,9 @@ package Unit5Examples.homework;
       * @param snack
       */
      public static void compareCalories(Meals meal, Snacks snack){
-         System.out.println("YOUR CALORIE COUNT:");
+         String YELLOW = "\033[0;33m";
+         String RESET = "\033[0m";  // Text Reset
+         System.out.println(YELLOW + "YOUR CALORIE COUNT:" + RESET);
          int recCalsADay = 2000;
          int caloriesTotal = meal.getTotalMealCals() + snack.getTotalSnackCals();
          int caloriesToEat = recCalsADay - caloriesTotal;

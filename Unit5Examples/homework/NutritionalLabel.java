@@ -5,6 +5,10 @@ public class NutritionalLabel{
     private double servingSize;
     private double calories;
     private double sugarInGrams;
+    public static final String BLUE = "\033[0;34m";    // BLUE
+    public static final String PURPLE = "\033[0;35m";  // PURPLE
+    public static final String RED = "\033[0;31m";     // RED
+    public static final String RESET = "\033[0m";     //RESET
 
     //calories per serving + sugar per serving
     private double caloriesPerServing;
@@ -25,7 +29,7 @@ public class NutritionalLabel{
      *int servingSize, int calories, int sugarInGrams
 */
     public String toString(){
-        return "Calories: " + calories + "\n"+ "Serving Size: " + servingSize + " cups" + "\n" + "Sugar In Grams: " + sugarInGrams + " g";
+        return BLUE + "Calories: " + calories  + RESET + "\n"+ PURPLE + "Serving Size: " + servingSize + " cups" + RESET + "\n" + RED + "Sugar In Grams: " + sugarInGrams + " g" + RESET;
     }
 
     //getters and setters for all of the instance variables

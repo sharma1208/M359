@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/Meals.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/Meals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" afterDir="false" />
@@ -30,6 +29,18 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Meals.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/CompoundBooleanExamples.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Power.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/ReviewTester.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yBSwrBiQqEpdIKXbxodQiB00zh" />
   <component name="ProjectViewState">
