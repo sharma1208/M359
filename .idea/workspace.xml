@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/FileReadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/StudentTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/ScheduleReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduleData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -62,7 +59,7 @@
       <recent name="C:\Users\sharma1208\Documents\GitHub\M359" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FileReadExample">
+  <component name="RunManager" selected="Application.ScheduleReader">
     <configuration name="FileReadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.FileReadExample" />
       <module name="M359" />
@@ -102,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.homework.PigLatinTester" />
+    <configuration name="ScheduleReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.ScheduleReader" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.homework.*" />
+          <option name="PATTERN" value="Unit6_Arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ScheduleReader" />
         <item itemvalue="Application.FileReadExample" />
         <item itemvalue="Application.StudentTester" />
         <item itemvalue="Application.MethodTester" />
         <item itemvalue="Application.MarvelMovieTester" />
-        <item itemvalue="Application.PigLatinTester" />
       </list>
     </recent_temporary>
   </component>
