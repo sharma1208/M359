@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/ScheduleReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scheduleData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/triviaQuestions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sharma1208\Documents\GitHub\M359" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sharma1208\Documents\GitHub\M359" />
     </key>
   </component>

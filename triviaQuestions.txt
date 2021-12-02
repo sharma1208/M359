@@ -1,0 +1,16 @@
+2
+How many feet tall is the tallest man on earth?
+100
+A) 8
+B) 3
+C) 6
+D) 7
+B
+Which college has the lowest acceptance rate?
+100
+A) Georgia Tech
+B) Purdue
+C) UIUC
+D) UIC
+A
+
