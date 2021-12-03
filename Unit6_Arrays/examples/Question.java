@@ -6,6 +6,7 @@ public class Question {
     private String answerChoiceB;
     private String answerChoiceC;
     private String answerChoiceD;
+    private String correctAnswer;
     private int pointValue;
 
     public Question(String questionText, String answerChoiceA, String answerChoiceB, String answerChoiceC, String answerChoiceD, int pointValue) {
@@ -14,6 +15,7 @@ public class Question {
         this.answerChoiceB = answerChoiceB;
         this.answerChoiceC = answerChoiceC;
         this.answerChoiceD = answerChoiceD;
+        this.correctAnswer = correctAnswer;
         this.pointValue = pointValue;
     }
 

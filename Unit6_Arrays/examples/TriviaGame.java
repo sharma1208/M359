@@ -1,12 +1,49 @@
 package Unit6_Arrays.examples;
 
+import java.util.Scanner;
+import java.io.FileNotFoundException;
+import java.io.File;
+
 public class TriviaGame {
     private int correctAnswerStreak;
     private Question[] TriviaQs;
+    private int numQuestions;
 
-    public TriviaGame(Question[] triviaQs) {
+    public TriviaGame()  {
         correctAnswerStreak = 0;
-        TriviaQs = triviaQs;
+
+    }
+
+    public void readQuestions() throws FileNotFoundException{
+        File myFile = new File("triviaQuestions.txt");
+        Scanner fileIn = new Scanner (myFile);
+        // number of question
+        numQuestions = fileIn.nextInt();
+        fileIn.nextLine();
+
+        Question[] fullQuestions = new Question[numQuestions];
+
+        while(fileIn.hasNextLine()){
+            String question = fileIn.nextLine();
+
+            for(int i = 0; i < 12; i++) {
+                int numPoints = fileIn.nextInt();
+                fileIn.nextLine();
+
+                String answer1 = fileIn.nextLine();
+                String answer2 = fileIn.nextLine();
+                String answer3 = fileIn.nextLine();
+                String answer4 = fileIn.nextLine();
+                String correctAnswer = fileIn.nextLine();
+
+                Question oneQuestion = new Question(question,answer1,answer2,answer3,answer4,correctAnswer,numPoints);
+                fullQuestions[] = oneQuestion;
+
+
+                
+            }
+        }
+
     }
 
 }
