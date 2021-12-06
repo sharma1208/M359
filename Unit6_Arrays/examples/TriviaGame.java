@@ -21,12 +21,14 @@ public class TriviaGame {
         numQuestions = fileIn.nextInt();
         fileIn.nextLine();
 
-        Question[] fullQuestions = new Question[numQuestions];
+        Question[] TriviaQs = new Question[numQuestions];
 
         while(fileIn.hasNextLine()){
-            String question = fileIn.nextLine();
 
-            for(int i = 0; i < 12; i++) {
+
+            for(int i = 0; i < numQuestions; i++) {
+                String question = fileIn.nextLine();
+
                 int numPoints = fileIn.nextInt();
                 fileIn.nextLine();
 
@@ -37,13 +39,17 @@ public class TriviaGame {
                 String correctAnswer = fileIn.nextLine();
 
                 Question oneQuestion = new Question(question,answer1,answer2,answer3,answer4,correctAnswer,numPoints);
-                fullQuestions[] = oneQuestion;
-
-
-                
+                System.out.println(oneQuestion);
+                TriviaQs[i] = oneQuestion;
             }
         }
 
     }
+    public String getRandomQuestion(){
+        int randomIndex = (int)(Math.random() * TriviaQs.length) + 0;
+    }
+
+
+
 
 }

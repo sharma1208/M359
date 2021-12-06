@@ -63,26 +63,13 @@
       <recent name="C:\Users\sharma1208\Documents\GitHub\M359" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ScheduleReader">
+  <component name="RunManager" selected="Application.TriviaDriver">
     <configuration name="FileReadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.FileReadExample" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit6_Arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit5Classes.HeroVillainExample.MarvelMovieTester" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit5Classes.HeroVillainExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,13 +116,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TriviaDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.examples.TriviaDriver" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit6_Arrays.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.ScheduleReader" />
         <item itemvalue="Application.FileReadExample" />
         <item itemvalue="Application.StudentTester" />
         <item itemvalue="Application.MethodTester" />
-        <item itemvalue="Application.MarvelMovieTester" />
       </list>
     </recent_temporary>
   </component>

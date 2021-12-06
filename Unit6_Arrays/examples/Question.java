@@ -9,7 +9,7 @@ public class Question {
     private String correctAnswer;
     private int pointValue;
 
-    public Question(String questionText, String answerChoiceA, String answerChoiceB, String answerChoiceC, String answerChoiceD, int pointValue) {
+    public Question(String questionText, String answerChoiceA, String answerChoiceB, String answerChoiceC, String answerChoiceD, String correctAnswer, int pointValue) {
         this.questionText = questionText;
         this.answerChoiceA = answerChoiceA;
         this.answerChoiceB = answerChoiceB;
@@ -21,8 +21,8 @@ public class Question {
 
     public String toString(){
         String output = "Question: " + questionText + "\n";
-        output += "Point Value: " + pointValue;
-        output += "Answer choices: " + answerChoiceA + "\n " + answerChoiceB + " \n" + answerChoiceC + " \n" + answerChoiceD;
+        output += "Point Value: " + pointValue + "\n";
+        output += "Answer choices: \n" + answerChoiceA + " \n" + answerChoiceB + " \n" + answerChoiceC + " \n" + answerChoiceD;
         return output;
     }
 
