@@ -45,8 +45,17 @@ public class TriviaGame {
         }
 
     }
-    public String getRandomQuestion(){
-        int randomIndex = (int)(Math.random() * TriviaQs.length) + 0;
+    public int getRandomQuestion(){
+            int randomIndex = (int)(Math.random() * TriviaQs.length) + 0;
+            if(TriviaQs[randomIndex].getQuestionAsked() == false){
+                 TriviaQs[randomIndex].setQuestionAsked(true);
+            }else{
+                while (TriviaQs[randomIndex].getQuestionAsked() == true) {
+                    randomIndex = (int) (Math.random() * TriviaQs.length) + 0;
+                }
+                TriviaQs[randomIndex].setQuestionAsked(true);
+            }
+            return randomIndex;
     }
 
 

@@ -8,8 +8,10 @@ public class Question {
     private String answerChoiceD;
     private String correctAnswer;
     private int pointValue;
+    private boolean questionAsked;
 
-    public Question(String questionText, String answerChoiceA, String answerChoiceB, String answerChoiceC, String answerChoiceD, String correctAnswer, int pointValue) {
+    public Question(String questionText, String answerChoiceA,
+                    String answerChoiceB, String answerChoiceC, String answerChoiceD, String correctAnswer, int pointValue) {
         this.questionText = questionText;
         this.answerChoiceA = answerChoiceA;
         this.answerChoiceB = answerChoiceB;
@@ -17,6 +19,7 @@ public class Question {
         this.answerChoiceD = answerChoiceD;
         this.correctAnswer = correctAnswer;
         this.pointValue = pointValue;
+        this.questionAsked = false;
     }
 
     public String toString(){
@@ -48,5 +51,13 @@ public class Question {
 
     public int getPointValue() {
         return pointValue;
+}
+    public boolean getQuestionAsked(){
+        return questionAsked;
     }
+
+    public boolean setQuestionAsked(boolean val){
+        questionAsked = val;
+    }
+
 }

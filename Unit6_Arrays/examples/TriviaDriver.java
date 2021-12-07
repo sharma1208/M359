@@ -19,6 +19,7 @@ public class TriviaDriver{
         while (true){
 
             // ask a random question
+            System.out.println(myGame.getRandomQuestion());
 
             // get user input
 
