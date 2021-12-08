@@ -6,8 +6,9 @@ import java.io.FileNotFoundException;
 public class TriviaDriver{
     public static void main(String[] args) throws FileNotFoundException{
         TriviaGame myGame = new TriviaGame();
+        // read in all questions
         myGame.readQuestions();
-        //grab users name
+        //grab users name, and print
         Scanner name = new Scanner(System.in);
         System.out.println("What is your name?\n");
         String userName = name.nextLine();
@@ -16,15 +17,26 @@ public class TriviaDriver{
         System.out.println("We are so happy to have you playing today " + userName);
         System.out.println("Ready,set,go!");
 
-        while (true){
+        boolean wantsQuestions = true;
+        int streak = 
+        while (wantsQuestions == true){
 
             // ask a random question
-            System.out.println(myGame.getRandomQuestion());
-
+            int getQuestion = myGame.getRandomQuestion();
+            //collect trivia questions
+            Question qs =  myGame.getTriviaQs()[getQuestion];
+            System.out.println(qs);
             // get user input
-
+            Scanner answer = new Scanner(System.in);
+            System.out.println("INPUT A,B,C,OR D");
+            String userAnswer = answer.nextLine();
             // compare user input to correct answer
+            if(userAnswer.equals(qs.getCorrectAnswer())) {
+                System.out.println("correct! The correct answer is " + qs.getCorrectAnswer());
 
+            }else{
+
+            }
             // announce whether they got it right/wrong, assign points
 
 

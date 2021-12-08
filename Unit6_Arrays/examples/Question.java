@@ -52,6 +52,15 @@ public class Question {
     public int getPointValue() {
         return pointValue;
 }
+
+    public String getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
     public boolean getQuestionAsked(){
         return questionAsked;
     }

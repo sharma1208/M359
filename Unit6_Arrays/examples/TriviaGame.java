@@ -58,7 +58,27 @@ public class TriviaGame {
             return randomIndex;
     }
 
+    public int getCorrectAnswerStreak() {
+        return correctAnswerStreak;
+    }
 
+    public void setCorrectAnswerStreak(int correctAnswerStreak) {
+        this.correctAnswerStreak = correctAnswerStreak;
+    }
 
+    public Question[] getTriviaQs() {
+        return TriviaQs;
+    }
 
+    public void setTriviaQs(Question[] triviaQs) {
+        TriviaQs = triviaQs;
+    }
+
+    public int getNumQuestions() {
+        return numQuestions;
+    }
+
+    public void setNumQuestions(int numQuestions) {
+        this.numQuestions = numQuestions;
+    }
 }
