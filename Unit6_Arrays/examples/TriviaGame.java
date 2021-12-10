@@ -8,6 +8,7 @@ public class TriviaGame {
     private int correctAnswerStreak;
     private Question[] TriviaQs;
     private int numQuestions;
+    private int totalScore = 0;
 
     public TriviaGame()  {
         correctAnswerStreak = 0;
@@ -58,6 +59,82 @@ public class TriviaGame {
             return randomIndex;
     }
 
+    public int updatePoints(boolean gained, int questionIndex){
+        if(gained == true) {
+            int val = TriviaQs[questionIndex].getPointValue();
+            totalScore += val;
+            System.out.println("You gained " + val);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    }
     public int getCorrectAnswerStreak() {
         return correctAnswerStreak;
     }

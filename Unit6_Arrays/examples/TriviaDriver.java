@@ -18,7 +18,6 @@ public class TriviaDriver{
         System.out.println("Ready,set,go!");
 
         boolean wantsQuestions = true;
-        int streak = 
         while (wantsQuestions == true){
 
             // ask a random question
@@ -32,7 +31,9 @@ public class TriviaDriver{
             String userAnswer = answer.nextLine();
             // compare user input to correct answer
             if(userAnswer.equals(qs.getCorrectAnswer())) {
-                System.out.println("correct! The correct answer is " + qs.getCorrectAnswer());
+                System.out.println("That's right! The correct answer is " + qs.getCorrectAnswer());
+                myGame.setCorrectAnswerStreak(myGame.getCorrectAnswerStreak() + 1);
+
 
             }else{
 
