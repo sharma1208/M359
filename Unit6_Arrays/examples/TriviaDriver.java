@@ -16,10 +16,10 @@ public class TriviaDriver{
         System.out.println("Welcome to VENYA'S WONDERFUL TRIVA SHOW");
         System.out.println("We are so happy to have you playing today " + userName);
         System.out.println("Ready,set,go!");
+        System.out.println();
 
         boolean wantsQuestions = true;
         while (wantsQuestions == true){
-
             // ask a random question
             int getQuestion = myGame.getRandomQuestion();
             //collect trivia questions
@@ -33,13 +33,22 @@ public class TriviaDriver{
             if(userAnswer.equals(qs.getCorrectAnswer())) {
                 System.out.println("That's right! The correct answer is " + qs.getCorrectAnswer());
                 myGame.setCorrectAnswerStreak(myGame.getCorrectAnswerStreak() + 1);
-
-
+                //add points
+                myGame.updatePoints(true, getQuestion);
             }else{
-
+                System.out.println("Unfortunately that's incorrect. The correct answer is " + qs.getCorrectAnswer());
+                myGame.setCorrectAnswerStreak(0);
+                myGame.updatePoints(false, getQuestion);
             }
-            // announce whether they got it right/wrong, assign points
-
+            //Another question?
+            Scanner more = new Scanner(System.in);
+            System.out.println("Input Yes Or No: Do you want another question?");
+            String moreQuestions = more.nextLine(); 
+            if(moreQuestions.equals("Yes")){
+                wantsQuestions = true;
+            }else{
+                wantsQuestions = false;
+            }
 
         }
 

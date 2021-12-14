@@ -22,7 +22,7 @@ public class TriviaGame {
         numQuestions = fileIn.nextInt();
         fileIn.nextLine();
 
-        Question[] TriviaQs = new Question[numQuestions];
+        TriviaQs = new Question[numQuestions];
 
         while(fileIn.hasNextLine()){
 
@@ -40,7 +40,6 @@ public class TriviaGame {
                 String correctAnswer = fileIn.nextLine();
 
                 Question oneQuestion = new Question(question,answer1,answer2,answer3,answer4,correctAnswer,numPoints);
-                System.out.println(oneQuestion);
                 TriviaQs[i] = oneQuestion;
             }
         }
@@ -59,82 +58,17 @@ public class TriviaGame {
             return randomIndex;
     }
 
-    public int updatePoints(boolean gained, int questionIndex){
+    public void updatePoints(boolean gained, int questionIndex){
+        int val = TriviaQs[questionIndex].getPointValue();
         if(gained == true) {
-            int val = TriviaQs[questionIndex].getPointValue();
             totalScore += val;
-            System.out.println("You gained " + val);
+            System.out.println("You gained " + val + " points");
+        }else{
+            totalScore -= val;
+            System.out.println("You lost " + val + " points");
+        }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-
-    }
     public int getCorrectAnswerStreak() {
         return correctAnswerStreak;
     }

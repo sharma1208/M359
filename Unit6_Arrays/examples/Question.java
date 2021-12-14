@@ -65,7 +65,7 @@ public class Question {
         return questionAsked;
     }
 
-    public boolean setQuestionAsked(boolean val){
+    public void setQuestionAsked(boolean val){
         questionAsked = val;
     }
 
