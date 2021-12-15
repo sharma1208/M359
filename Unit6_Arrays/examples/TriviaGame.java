@@ -8,6 +8,7 @@ public class TriviaGame {
     private int correctAnswerStreak;
     private Question[] TriviaQs;
     private int numQuestions;
+    private int numQuestionsAsked = 0;
     private int totalScore = 0;
 
     public TriviaGame()  {
@@ -49,9 +50,11 @@ public class TriviaGame {
             int randomIndex = (int)(Math.random() * TriviaQs.length) + 0;
             if(TriviaQs[randomIndex].getQuestionAsked() == false){
                  TriviaQs[randomIndex].setQuestionAsked(true);
+                 numQuestionsAsked++;
             }else{
                 while (TriviaQs[randomIndex].getQuestionAsked() == true) {
                     randomIndex = (int) (Math.random() * TriviaQs.length) + 0;
+                    numQuestionsAsked++;
                 }
                 TriviaQs[randomIndex].setQuestionAsked(true);
             }
@@ -91,5 +94,21 @@ public class TriviaGame {
 
     public void setNumQuestions(int numQuestions) {
         this.numQuestions = numQuestions;
+    }
+
+    public int getTotalScore() {
+        return totalScore;
+    }
+
+    public void setTotalScore(int totalScore) {
+        this.totalScore = totalScore;
+    }
+
+    public int getNumQuestionsAsked() {
+        return numQuestionsAsked;
+    }
+
+    public void setNumQuestionsAsked(int numQuestionsAsked) {
+        this.numQuestionsAsked = numQuestionsAsked;
     }
 }
