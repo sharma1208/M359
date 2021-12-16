@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/examples/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/TriviaDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/TriviaDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/TriviaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/TriviaGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/triviaQuestions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/triviaQuestions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triviaQuestions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/triviaQuestions.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,16 +38,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Meals.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/CompoundBooleanExamples.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Power.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/CompoundBooleanExamples.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/ReviewTester.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yBSwrBiQqEpdIKXbxodQiB00zh" />
   <component name="ProjectViewState">
@@ -168,15 +175,19 @@
           <properties class="java.lang.ArithmeticException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
           <line>6</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/examples/TriviaDriver.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
@@ -188,5 +199,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/M359$TriviaDriver.ic" NAME="TriviaDriver Coverage Results" MODIFIED="1639623876327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Unit6_Arrays.examples.*</FILTER>
+    </SUITE>
   </component>
 </project>

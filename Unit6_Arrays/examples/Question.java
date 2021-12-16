@@ -22,6 +22,11 @@ public class Question {
         this.questionAsked = false;
     }
 
+    /**
+     * allows us to print each question to display to the user before they choose an answer choice. They now know what choices
+     * they have and can see it displayed in the output, helping with clear format
+     * @return
+     */
     public String toString(){
         String output = "Question: " + questionText + "\n";
         output += "Point Value: " + pointValue + "\n";
