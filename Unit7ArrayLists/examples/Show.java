@@ -19,6 +19,7 @@ public class Show {
         String output = "Date\tPrice\tQty\tPerformer\t\tCity";
         output += "-----------------------------------------------------------------";
         output += date + " " + price + " " + quantityOfTickets + " " + artistName + " " + location;
+        return output;
     }
 
     public String getDate() {
