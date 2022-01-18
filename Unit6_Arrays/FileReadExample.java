@@ -20,6 +20,7 @@ public class FileReadExample {
         System.out.println(period);
         fileIn.nextLine(); //Dummy read to go to next line
 
+
         String grade = fileIn.nextLine();
         System.out.println(grade);
     }

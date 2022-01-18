@@ -2,12 +2,12 @@ package Unit7ArrayLists.examples;
 
 public class Show {
     private String date;
-    private int price;
+    private double price;
     private int quantityOfTickets;
     private String artistName;
     private String location;
 
-    public Show(String date, int price, int quantityOfTickets, String artistName, String location) {
+    public Show(String date, double price, int quantityOfTickets, String artistName, String location) {
         this.date = date;
         this.price = price;
         this.quantityOfTickets = quantityOfTickets;
@@ -30,11 +30,11 @@ public class Show {
         this.date = date;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
