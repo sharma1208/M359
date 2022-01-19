@@ -25,7 +25,21 @@ public class TicketMaster {
             showList.add(newShow);
         }
 
-        System.out.println(showList);
+    }
+
+    public void printList(ArrayList<Show> a){
+        for(Show show: a){
+            System.out.println(show);
+            System.out.println();
+        }
+    }
+
+    public ArrayList<Show> getShowList() {
+        return showList;
+    }
+
+    public void setShowList(ArrayList<Show> showList) {
+        this.showList = showList;
     }
 }
 

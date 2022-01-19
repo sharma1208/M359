@@ -8,5 +8,9 @@ public class TicketMasterDriver {
         Scanner fileIn = new Scanner(myFile);
         TicketMaster uploadFile = new TicketMaster(fileIn);
 
+        System.out.println("Date\t\tPrice\tQty\tPerformer\t\tCity");
+        System.out.println("-----------------------------------------------------------------");
+        uploadFile.printList(uploadFile.getShowList());
+
     }
 }

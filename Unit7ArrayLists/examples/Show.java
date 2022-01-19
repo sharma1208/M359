@@ -16,9 +16,7 @@ public class Show {
     }
 
     public String toString(){
-        String output = "Date\tPrice\tQty\tPerformer\t\tCity";
-        output += "-----------------------------------------------------------------";
-        output += date + " " + price + " " + quantityOfTickets + " " + artistName + " " + location;
+        String output = date + "\t" + price + "\t" + quantityOfTickets + "\t" + artistName + "\t\t" + location;
         return output;
     }
 
