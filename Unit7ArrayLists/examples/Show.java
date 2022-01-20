@@ -16,7 +16,7 @@ public class Show {
     }
 
     public String toString(){
-       // String output = date + "" + price + "\t\t" + quantityOfTickets + "\t\t" + artistName;
+        String output = date + "" + price + "\t\t" + quantityOfTickets + "\t\t" + artistName;
         String output = date;
          int nextColoumn = 12 - output.length();
          while(nextColoumn >  0 ) {
@@ -42,17 +42,6 @@ public class Show {
             nextColoumn--;
         }
         output += location;
-
-
-      /*  //System.out.println(output.length());
-        int numTabs = (53 - output.length());
-       //System.out.println(numTabs);
-        while(numTabs > 0){
-            output += " ";
-            numTabs--;
-        }
-       // output += output.length() + "\t\t";
-        output += location;*/
         return output;
     }
 

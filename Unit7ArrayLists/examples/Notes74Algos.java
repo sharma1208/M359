@@ -126,7 +126,11 @@ public class Notes74Algos {
      * @return true or false if increasing
      */
     public static boolean isIncreasing(ArrayList<Integer> list) {
-        return true;
+        for(int i =0; i < list.size() -1; i++){
+            if(list.get(i) > list.get(i+1)){
+                return false;
+            }
+        }
     }
 
     /**
@@ -136,7 +140,13 @@ public class Notes74Algos {
      * @return true if any values are repeated, false otherwise
      */
     public static boolean hasDuplicates(ArrayList<String> list) {
-        return true;
+      for(int i =0; i < list.size()-1; i++){
+          for(int j = i+1; j < list.size(); j++){
+              if(list.get(i).equalsIgnoreCase(list.get(j))){
+                  return true;
+              }
+          }
+      }
     }
 
     /**
@@ -146,7 +156,11 @@ public class Notes74Algos {
      * @return new ArrayList of Strings in reverse order
      */
     public static ArrayList<String> revArrayList(ArrayList<String> list) {
-        return list;
+       ArrayList<String> newList = new ArrayList<>();
+        for(int i = list.size()-1; i >= 0; i++){
+            newList.add(list.get(i));
+        }
+        return newList;
     }
 
     /**
@@ -155,8 +169,11 @@ public class Notes74Algos {
      * @param list
      */
     public static void shiftLeft(ArrayList<String> list) {
-
-
+        String first = list.get(0);
+        for(int i = 0; i < list.size()-1; i++){
+            list.set(i,list.get(i+1));
+        }
+        list.set(list.size()-1, first);
     }
 
 
