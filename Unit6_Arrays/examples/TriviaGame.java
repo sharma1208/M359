@@ -55,7 +55,7 @@ public class TriviaGame {
         if(TriviaQs[randomIndex].getQuestionAsked() == false){
             TriviaQs[randomIndex].setQuestionAsked(true);
         }else{
-    //while the question has already been used, find anotherindex, and then set that value to used by saying "false"
+    //while the question has already been used, find anotherindex, and then set that value to used by saying "true"
             while (TriviaQs[randomIndex].getQuestionAsked() == true) {
                 randomIndex = (int) (Math.random() * TriviaQs.length) + 0;
             } TriviaQs[randomIndex].setQuestionAsked(true);
