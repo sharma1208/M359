@@ -16,7 +16,7 @@ public class Show {
     }
 
     public String toString(){
-        String output = date + "" + price + "\t\t" + quantityOfTickets + "\t\t" + artistName;
+        //String output = date + "" + price + "\t\t" + quantityOfTickets + "\t\t" + artistName;
         String output = date;
          int nextColoumn = 12 - output.length();
          while(nextColoumn >  0 ) {

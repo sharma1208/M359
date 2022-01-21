@@ -131,6 +131,7 @@ public class Notes74Algos {
                 return false;
             }
         }
+        return true;
     }
 
     /**
@@ -147,6 +148,7 @@ public class Notes74Algos {
               }
           }
       }
+      return false;
     }
 
     /**
