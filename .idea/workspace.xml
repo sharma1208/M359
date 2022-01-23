@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/showData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit7ArrayLists/examples/Notes74Algos.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7ArrayLists/examples/Notes74Algos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit7ArrayLists/examples/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7ArrayLists/examples/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit7ArrayLists/examples/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7ArrayLists/examples/TicketMasterDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/FileReadExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/FileReadExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/ScheduleReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/ScheduleReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/TriviaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/examples/TriviaGame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +28,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Meals.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Power.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/CompoundBooleanExamples.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/ReviewTester.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yBSwrBiQqEpdIKXbxodQiB00zh" />
   <component name="ProjectViewState">
@@ -187,13 +168,18 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Notes43StringAlgos.java</url>
           <line>3</line>
-          <properties class="Unit4_Iteration.examples.Notes43StringAlgos" method="main">
+          <properties class="Unit4_Iteration.examples.Notes43StringAlgos">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="e" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/M359$TriviaDriver.ic" NAME="TriviaDriver Coverage Results" MODIFIED="1639623876327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7c7275f-f626-4600-bc87-70ced7f95e1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/examples/TriviaGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7ArrayLists/examples/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7ArrayLists/examples/TicketMasterDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +28,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/MethodTester.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Meals.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/NutritionalLabel.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Examples/homework/Snacks.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Power.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/SuperHero.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/Villain.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/CompoundBooleanExamples.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit5Classes/HeroVillainExample/MarvelMovieTester.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Unit3_Boolean/examples/ReviewTester.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="1yBSwrBiQqEpdIKXbxodQiB00zh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +45,7 @@
       <recent name="C:\Users\sharma1208\Documents\GitHub\M359" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\sharma1208\Documents\GitHub\M359" />
     </key>
   </component>
@@ -76,19 +65,6 @@
     </configuration>
     <configuration name="ScheduleReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.ScheduleReader" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit6_Arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.StudentTester" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
@@ -126,13 +102,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unit7Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7ArrayLists.examples.Unit7Notes" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit7ArrayLists.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TicketMasterDriver" />
+        <item itemvalue="Application.Unit7Notes" />
         <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.ScheduleReader" />
         <item itemvalue="Application.FileReadExample" />
-        <item itemvalue="Application.StudentTester" />
       </list>
     </recent_temporary>
   </component>
