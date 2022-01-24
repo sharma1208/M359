@@ -19,7 +19,7 @@ public class TicketMaster {
             int quantity = readIn.nextInt();
             String temp = readIn.nextLine();
             String artistName = temp.substring(0, temp.indexOf(','));
-            String location = temp.substring(temp.indexOf(',') + 1);
+            String location = temp.substring(temp.indexOf(',') + 2);
 
             Show newShow = new Show(date,price,quantity,artistName,location);
             showList.add(newShow);
@@ -28,6 +28,8 @@ public class TicketMaster {
     }
 
     public void printList(ArrayList<Show> a){
+        System.out.println("Date        Price       Qty       Performer           City");
+        System.out.println("-----------------------------------------------------------------");
         for(Show show: a){
             System.out.println(show);
             System.out.println();

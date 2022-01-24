@@ -1,4 +1,5 @@
 package Unit7ArrayLists.examples;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.File;
@@ -12,51 +13,66 @@ public class TicketMasterDriver {
         TicketMaster uploadFile = new TicketMaster(fileIn);
 
 
-        System.out.println("Date        Price       Qty       Performer           City");
-        System.out.println("-----------------------------------------------------------------");
+
+        
         uploadFile.printList(uploadFile.getShowList());
 
         Scanner keyboardInputs = new Scanner(System.in);
         boolean keepGoing = true;
-        while (keepGoing){
-
+        while (keepGoing) {
+            System.out.println("Pick one of the options below by inputting the number that correspond to the action");
+            System.out.println("1. Sort A-Z");
+            System.out.println("2. Sort Z-A");
+            System.out.println("3. Sort price high-low");
+            System.out.println("4. Sort price low-high");
+            System.out.println("5. Search by city");
+            System.out.println("6. Quit");
             try {
-                System.out.println("Pick one of the options below by inputting the number that correspond to the action");
-                System.out.println("1. Sort A-Z");
-                System.out.println("2. Sort Z-A");
-                System.out.println("3. Sort price high-low");
-                System.out.println("4. Sort price low-high");
-                System.out.println("5. Search by city");
-                System.out.println("6. Quit");
+                String input = keyboardInputs.nextLine();
+                //int numberExecute = 0;
 
-                int numberExecute = keyboardInputs.nextInt();
+                if (input.indexOf(".") != -1) {
 
-                if (numberExecute > 6 || numberExecute < 1) {
+                    double doubleExecute = Double.parseDouble(input);
+                    System.out.println("You have entered a decimal, please enter an integer");
+                } else {
+                    int numberExecute = Integer.parseInt(input);
+                    if (numberExecute > 6 || numberExecute < 1) {
 
-                    System.out.println("Integer out of range, enter new integer");
+                        System.out.println("Integer out of range, enter new integer");
+                        //keyboardInputs.nextLine();
+                    }
+                    if (numberExecute == 5) {
+                        System.out.println("Which city would you like to search by?");
+                        String loc = keyboardInputs.nextLine();
+                        uploadFile.printList(sortByCity(uploadFile.getShowList(), loc));
+
+                    }
+                    if (numberExecute == 6) {
+                        keepGoing = false;
+                    }
                 }
 
-                if (numberExecute == 6) {
-                    keepGoing = false;
-                }
-            }
 
-            catch(InputMismatchException e) {
+            } catch (NumberFormatException e) {
 
-                System.out.println("Please enter an integer");
-                keyboardInputs.nextLine();
+                System.out.println("You entered a string, please enter an integer");
+                //keyboardInputs.nextLine();
 
             }
-
-
-
-
-
-
-
-        }
-
 
         }
 
     }
+
+    public static ArrayList<Show> sortByCity(ArrayList<Show> info, String key) {
+        ArrayList<Show> reordered = new ArrayList<>();
+        for (int i = 0; i < info.size(); i++) {
+            if (info.get(i).getLocation().equals(key)) {
+                reordered.add(info.get(i));
+            }
+        }
+        return reordered;
+    }
+
+}
