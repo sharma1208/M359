@@ -13,8 +13,6 @@ public class TicketMasterDriver {
         TicketMaster uploadFile = new TicketMaster(fileIn);
 
 
-
-        
         uploadFile.printList(uploadFile.getShowList());
 
         Scanner keyboardInputs = new Scanner(System.in);
@@ -41,6 +39,12 @@ public class TicketMasterDriver {
 
                         System.out.println("Integer out of range, enter new integer");
                         //keyboardInputs.nextLine();
+                    }
+                    if (numberExecute == 1) {
+                        uploadFile.printList(alphaSortForward(uploadFile.getShowList()));
+                    }
+                    if(numberExecute == 2){
+                        uploadFile.printList(alphaSortBackward(uploadFile.getShowList()));
                     }
                     if (numberExecute == 5) {
                         System.out.println("Which city would you like to search by?");
@@ -75,4 +79,47 @@ public class TicketMasterDriver {
         return reordered;
     }
 
+    public static ArrayList<Show> alphaSortForward(ArrayList<Show> info) {
+        for (int i = 0; i < info.size() - 1; i++) {
+            //look for the smallest remaining number and get its index
+            int minIndex = i;
+            for (int j = i + 1; j < info.size(); j++) {
+                String firstCompare = info.get(j).getArtistName();
+                String secondCompare = info.get(minIndex).getArtistName();
+                if (firstCompare.compareTo(secondCompare) < 0) {
+                    minIndex = j;
+                }
+            }
+            //swap values at index i and minIndex
+            Show temp = info.get(i);
+            info.set(i, info.get(minIndex));
+            info.set(minIndex, temp);
+        }
+        return info;
+
+    }
+
+    public static ArrayList<Show> alphaSortBackward(ArrayList<Show> info) {
+        for (int i = 0; i < info.size() - 1; i++) {
+            //look for the smallest remaining number and get its index
+            int minIndex = i;
+            for (int j = i + 1; j < info.size(); j++) {
+                String firstCompare = info.get(j).getArtistName();
+                String secondCompare = info.get(minIndex).getArtistName();
+                if (firstCompare.compareTo(secondCompare) > 0) {
+                    minIndex = j;
+                }
+            }
+            //swap values at index i and minIndex
+            Show temp = info.get(i);
+            info.set(i, info.get(minIndex));
+            info.set(minIndex, temp);
+        }
+        return info;
+
+    }
+
+
 }
+
+
