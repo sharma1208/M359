@@ -46,6 +46,9 @@ public class TicketMasterDriver {
                     if(numberExecute == 2){
                         uploadFile.printList(alphaSortBackward(uploadFile.getShowList()));
                     }
+                    if(numberExecute == 3){
+                        uploadFile.printList()
+                    }
                     if (numberExecute == 5) {
                         System.out.println("Which city would you like to search by?");
                         String loc = keyboardInputs.nextLine();
