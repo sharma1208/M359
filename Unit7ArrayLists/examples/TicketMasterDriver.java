@@ -47,7 +47,10 @@ public class TicketMasterDriver {
                         uploadFile.printList(alphaSortBackward(uploadFile.getShowList()));
                     }
                     if(numberExecute == 3){
-                        uploadFile.printList()
+                        uploadFile.printList(priceSortHighToLow(uploadFile.getShowList()));
+                    }
+                    if(numberExecute == 4){
+                        uploadFile.printList(priceSortLowToHigh(uploadFile.getShowList()));
                     }
                     if (numberExecute == 5) {
                         System.out.println("Which city would you like to search by?");
@@ -56,6 +59,7 @@ public class TicketMasterDriver {
 
                     }
                     if (numberExecute == 6) {
+                        System.out.println("You have ended the program");
                         keepGoing = false;
                     }
                 }
@@ -122,7 +126,34 @@ public class TicketMasterDriver {
 
     }
 
+    public static ArrayList<Show> priceSortHighToLow(ArrayList<Show> list){
+        for(int i = 1; i < list.size(); i++){
+            Show valueToInsert = list.get(i);
+            int position = i;
+            while(position > 0 && list.get(position-1).getPrice() < valueToInsert.getPrice()){
+                list.set(position,list.get(position-1)); //we shift the value next to the value to insert to the right
+                position--;
+            }
+            list.set(position,valueToInsert);
+        }
+        return list;
+        }
 
-}
+    public static ArrayList<Show> priceSortLowToHigh(ArrayList<Show> list){
+        for(int i = 1; i < list.size(); i++){
+            Show valueToInsert = list.get(i);
+            int position = i;
+            while(position > 0 && list.get(position-1).getPrice() > valueToInsert.getPrice()){
+                list.set(position,list.get(position-1)); //we shift the value next to the value to insert to the right
+                position--;
+            }
+            list.set(position,valueToInsert);
+        }
+        return list;
+    }
+    }
+
+
+
 
 
