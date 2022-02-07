@@ -19,11 +19,11 @@ public class TicketMasterDriver {
         boolean keepGoing = true;
         while (keepGoing) {
             System.out.println("Pick one of the options below by inputting the number that correspond to the action");
-            System.out.println("1. Sort A-Z");
+            System.out.println("1. Search by city");
             System.out.println("2. Sort Z-A");
             System.out.println("3. Sort price high-low");
             System.out.println("4. Sort price low-high");
-            System.out.println("5. Search by city");
+            System.out.println("5. Sort A-Z");
             System.out.println("6. Quit");
             try {
                 String input = keyboardInputs.nextLine();
@@ -40,7 +40,7 @@ public class TicketMasterDriver {
                         System.out.println("Integer out of range, enter new integer");
                         //keyboardInputs.nextLine();
                     }
-                    if (numberExecute == 1) {
+                    if (numberExecute == 5) {
                         uploadFile.printList(alphaSortForward(uploadFile.getShowList()));
                     }
                     if(numberExecute == 2){
@@ -52,7 +52,7 @@ public class TicketMasterDriver {
                     if(numberExecute == 4){
                         uploadFile.printList(priceSortLowToHigh(uploadFile.getShowList()));
                     }
-                    if (numberExecute == 5) {
+                    if (numberExecute == 1) {
                         System.out.println("Which city would you like to search by?");
                         String loc = keyboardInputs.nextLine();
                         uploadFile.printList(sortByCity(uploadFile.getShowList(), loc));
