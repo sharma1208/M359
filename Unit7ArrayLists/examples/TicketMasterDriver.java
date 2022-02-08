@@ -17,6 +17,7 @@ public class TicketMasterDriver {
 
         Scanner keyboardInputs = new Scanner(System.in);
         boolean keepGoing = true;
+
         while (keepGoing) {
             System.out.println("Pick one of the options below by inputting the number that correspond to the action");
             System.out.println("1. Search by city");
