@@ -28,8 +28,8 @@ public class DumbDenna_8_2 {
         boolean result = isFound(myFavs, "ice cream");
         System.out.println("Is ice cream a fav? " + result);
 
-        result = isFound(myFavs, "speghetti");
-        System.out.println("Is speghetti a fav? " + result);
+        result = isFound(myFavs, "spaghetti");
+        System.out.println("Is spaghetti a fav? " + result);
 
     }
 
