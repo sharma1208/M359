@@ -10,6 +10,13 @@ public class WorkoutPlan {
     private Workout[][] workoutPlan;
 
 
-
-
+    public WorkoutPlan(int workoutsCompleted, int workoutsSkipped, int currWeek, int nextWorkoutNum, int totalCalsBurned, int totalMinsExercise, Workout[][] workoutPlan) {
+        this.workoutsCompleted = workoutsCompleted;
+        this.workoutsSkipped = workoutsSkipped;
+        this.currWeek = currWeek;
+        this.nextWorkoutNum = nextWorkoutNum;
+        this.totalCalsBurned = totalCalsBurned;
+        this.totalMinsExercise = totalMinsExercise;
+        this.workoutPlan = workoutPlan;
+    }
 }
