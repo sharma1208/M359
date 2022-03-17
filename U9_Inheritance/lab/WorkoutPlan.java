@@ -8,15 +8,37 @@ public class WorkoutPlan {
     private int totalCalsBurned;
     private int totalMinsExercise;
     private Workout[][] workoutPlan;
+    public static final String CARDIO_NAME = "Running";
+    public static final String STRENGTH_NAME = "Lifting";
+    public static final String WELLNESS_NAME = "Wellness";
 
 
-    public WorkoutPlan(int workoutsCompleted, int workoutsSkipped, int currWeek, int nextWorkoutNum, int totalCalsBurned, int totalMinsExercise, Workout[][] workoutPlan) {
-        this.workoutsCompleted = workoutsCompleted;
-        this.workoutsSkipped = workoutsSkipped;
-        this.currWeek = currWeek;
-        this.nextWorkoutNum = nextWorkoutNum;
-        this.totalCalsBurned = totalCalsBurned;
-        this.totalMinsExercise = totalMinsExercise;
-        this.workoutPlan = workoutPlan;
+    public WorkoutPlan(int planLength){
+
+    }
+
+    private void fillArray(int numWeeks){
+        for(
+
+
+
+
+
+
+
+
+
+
+
+
+        )
+        int randomNum = (int)(Math.random() * 3) + 1;
+        if(randomNum == 1){
+
+        }
+
+
+
+
     }
 }

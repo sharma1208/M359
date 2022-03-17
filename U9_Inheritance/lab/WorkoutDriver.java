@@ -8,21 +8,38 @@ import java.util.Scanner;
 
 public class WorkoutDriver {
     public static void main(String[] args) {
+        System.out.println("Hello and welcome to this workout simulator!");
         Scanner fileIn = new Scanner(System.in);
         System.out.println("How many weeks would you like to workout?");
-    }
+        int numWeeks = assignIntWeeks(fileIn);
 
-    public
-    boolean isValid = 
-    try {
-        int newVal = fileIn.nextInt();
-        if(newVal == 0){
-            System.out.println("You must input an integer larger than 0");
 
-        isValid = true;
-    } catch (InputMismatchException e) {
-        System.out.println("You inputted the incorrect type of value. Make sure to input an integer greater than 0. Try again here:");
-    }
-}
+        }
+
+        public static int assignIntWeeks(Scanner fileIn){
+           boolean isValid = false;
+           int newVal = 0;
+           while(isValid == false) {
+               try {
+                   newVal = fileIn.nextInt();
+                   fileIn.nextLine();
+                   isValid = true;
+                   if(newVal <= 0){
+                       System.out.println("You must input an integer value greater than 0 for the number of weeks ");
+                       while(newVal <= 0){
+                           newVal = fileIn.nextInt();
+                           fileIn.nextLine();
+                       }
+                   }
+
+               } catch (InputMismatchException e) {
+                   System.out.println("Sorry this doesn't work because you didn't input an integer. Try again.");
+               }
+           }
+           return newVal;
+        }
+
+
+
 
 }
