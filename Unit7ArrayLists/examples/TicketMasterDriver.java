@@ -13,8 +13,6 @@ public class TicketMasterDriver {
         TicketMaster uploadFile = new TicketMaster(fileIn);
 
 
-        uploadFile.printList(uploadFile.getShowList());
-
         Scanner keyboardInputs = new Scanner(System.in);
         boolean keepGoing = true;
 
@@ -26,6 +24,7 @@ public class TicketMasterDriver {
             System.out.println("4. Sort price low-high");
             System.out.println("5. Sort A-Z");
             System.out.println("6. Quit");
+            //check for wrong user inputs
             try {
                 String input = keyboardInputs.nextLine();
                 //int numberExecute = 0;
@@ -41,33 +40,17 @@ public class TicketMasterDriver {
                         System.out.println("Integer out of range, enter new integer");
                         //keyboardInputs.nextLine();
                     }
-                    if (numberExecute == 5) {
-                        uploadFile.printList(alphaSortForward(uploadFile.getShowList()));
-                    }
-                    if(numberExecute == 2){
-                        uploadFile.printList(alphaSortBackward(uploadFile.getShowList()));
-                    }
-                    if(numberExecute == 3){
-                        uploadFile.printList(priceSortHighToLow(uploadFile.getShowList()));
-                    }
-                    if(numberExecute == 4){
-                        uploadFile.printList(priceSortLowToHigh(uploadFile.getShowList()));
-                    }
-                    if (numberExecute == 1) {
-                        System.out.println("Which city would you like to search by?");
-                        String loc = keyboardInputs.nextLine();
-                        uploadFile.printList(sortByCity(uploadFile.getShowList(), loc));
-
-                    }
+                    runMethods(numberExecute, uploadFile, keyboardInputs);
                     if (numberExecute == 6) {
                         System.out.println("You have ended the program");
                         keepGoing = false;
                     }
+
                 }
 
-
             } catch (NumberFormatException e) {
-
+              //if can't parse to int or double, its a string, which is incorrect, need a new val to input,
+                //so runs loop from beginning
                 System.out.println("You entered a string, please enter an integer");
                 //keyboardInputs.nextLine();
 
@@ -77,84 +60,32 @@ public class TicketMasterDriver {
 
     }
 
-    public static ArrayList<Show> sortByCity(ArrayList<Show> info, String key) {
-        ArrayList<Show> reordered = new ArrayList<>();
-        for (int i = 0; i < info.size(); i++) {
-            if (info.get(i).getLocation().equals(key)) {
-                reordered.add(info.get(i));
-            }
+    /**
+     * Runs the corresponding methods needed to have the program execute its task of sorting, searching, and matching based
+     * on which value is inserted.
+     * @param numberExecute
+     * @param uploadFile
+     * @param keyboardInputs
+     */
+    public static void runMethods(int numberExecute, TicketMaster uploadFile, Scanner keyboardInputs){
+        if (numberExecute == 5) {
+            uploadFile.printList(uploadFile.alphaSortForward());
         }
-        return reordered;
+        if (numberExecute == 2) {
+            uploadFile.printList(uploadFile.alphaSortBackward());
+        }
+        if (numberExecute == 3) {
+            uploadFile.printList(uploadFile.priceSortHighToLow());
+        }
+        if (numberExecute == 4) {
+            uploadFile.printList(uploadFile.priceSortLowToHigh());
+        }
+        if (numberExecute == 1) {
+            System.out.println("Which city would you like to search by?");
+            String loc = keyboardInputs.nextLine();
+            uploadFile.printList(uploadFile.sortByCity(loc));
+
+        }
     }
-
-    public static ArrayList<Show> alphaSortForward(ArrayList<Show> info) {
-        for (int i = 0; i < info.size() - 1; i++) {
-            //look for the smallest remaining number and get its index
-            int minIndex = i;
-            for (int j = i + 1; j < info.size(); j++) {
-                String firstCompare = info.get(j).getArtistName();
-                String secondCompare = info.get(minIndex).getArtistName();
-                if (firstCompare.compareTo(secondCompare) < 0) {
-                    minIndex = j;
-                }
-            }
-            //swap values at index i and minIndex
-            Show temp = info.get(i);
-            info.set(i, info.get(minIndex));
-            info.set(minIndex, temp);
-        }
-        return info;
-
-    }
-
-    public static ArrayList<Show> alphaSortBackward(ArrayList<Show> info) {
-        for (int i = 0; i < info.size() - 1; i++) {
-            //look for the smallest remaining number and get its index
-            int minIndex = i;
-            for (int j = i + 1; j < info.size(); j++) {
-                String firstCompare = info.get(j).getArtistName();
-                String secondCompare = info.get(minIndex).getArtistName();
-                if (firstCompare.compareTo(secondCompare) > 0) {
-                    minIndex = j;
-                }
-            }
-            //swap values at index i and minIndex
-            Show temp = info.get(i);
-            info.set(i, info.get(minIndex));
-            info.set(minIndex, temp);
-        }
-        return info;
-
-    }
-
-    public static ArrayList<Show> priceSortHighToLow(ArrayList<Show> list){
-        for(int i = 1; i < list.size(); i++){
-            Show valueToInsert = list.get(i);
-            int position = i;
-            while(position > 0 && list.get(position-1).getPrice() < valueToInsert.getPrice()){
-                list.set(position,list.get(position-1)); //we shift the value next to the value to insert to the right
-                position--;
-            }
-            list.set(position,valueToInsert);
-        }
-        return list;
-        }
-
-    public static ArrayList<Show> priceSortLowToHigh(ArrayList<Show> list){
-        for(int i = 1; i < list.size(); i++){
-            Show valueToInsert = list.get(i);
-            int position = i;
-            while(position > 0 && list.get(position-1).getPrice() > valueToInsert.getPrice()){
-                list.set(position,list.get(position-1)); //we shift the value next to the value to insert to the right
-                position--;
-            }
-            list.set(position,valueToInsert);
-        }
-        return list;
-    }
-    }
-
-
-
-
+}
 

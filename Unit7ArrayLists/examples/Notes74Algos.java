@@ -28,6 +28,8 @@ public class Notes74Algos {
         numsNoRepeats.add(8);
         numsNoRepeats.add(9);
         numsNoRepeats.add(1);
+        System.out.println(findMin(numsNoRepeats));
+        System.out.println(findSum(numsNoRepeats));
 
 
         ArrayList<Integer> numsRepeats = new ArrayList<>();
@@ -43,6 +45,7 @@ public class Notes74Algos {
         orderedNums.add(2);
         orderedNums.add(3);
         orderedNums.add(8);
+        orderedNums.add(8);
         orderedNums.add(11);
         orderedNums.add(15);
         orderedNums.add(19);
@@ -55,15 +58,17 @@ public class Notes74Algos {
         names.add("Sanjana");
         names.add("Adi");
         names.add("Noah");
+        System.out.println(hasDuplicates(names));
+        System.out.println(revArrayList(names));
+        shiftRight(names);
+        System.out.println(names);
 
         System.out.println(numsNoRepeats);
         System.out.println(numsRepeats);
         System.out.println(orderedNums);
         System.out.println(names);
         //should show 1
-        System.out.println(findMin(numsNoRepeats));
         System.out.println(findMax(numsRepeats));
-        System.out.println(findSum(numsNoRepeats));
         System.out.println(findAverage(numsNoRepeats));
     }
 
@@ -73,13 +78,13 @@ public class Notes74Algos {
      * @return returns its int value
      */
     public static int findMin(ArrayList<Integer> list) {
-        int min = list.get(0);
-        for(int i = 1; i < list.size(); i++){
-            if(list.get(i) < min){
-                min = list.get(i);
-            }
-        }
-        return min;
+       int min =  list.get(0);
+       for(int i = 1; i < list.size(); i++){
+           if(min > list.get(i)){
+               min = list.get(i);
+           }
+       }
+       return min;
     }
 
     /**
@@ -103,11 +108,11 @@ public class Notes74Algos {
      * @return returns the int value for the sum
      */
     public static int findSum(ArrayList<Integer> list) {
-        int sum = list.get(0);
-        for(int  i = 1; i < list.size(); i++){
-            sum += list.get(i);
-        }
-        return sum;
+       int sum = 0;
+       for(int i = 0; i < list.size(); i++){
+           sum += list.get(i);
+       }
+       return sum;
     }
 
     /**
@@ -116,8 +121,7 @@ public class Notes74Algos {
      * @return double average value
      */
     public static double findAverage(ArrayList<Integer> list) {
-         double average = (double)findSum(list)/list.size();
-         return average;
+         return (double)findSum(list)/list.size();
     }
 
     /**
@@ -126,12 +130,15 @@ public class Notes74Algos {
      * @return true or false if increasing
      */
     public static boolean isIncreasing(ArrayList<Integer> list) {
-        for(int i =0; i < list.size() -1; i++){
-            if(list.get(i) > list.get(i+1)){
+        boolean answer = true;
+        for(int i = 0; i < list.size() - 1 ; i++){
+            if(list.get(i) <= list.get(i+1)){
+                answer = true;
+            }else{
                 return false;
             }
         }
-        return true;
+        return answer;
     }
 
     /**
@@ -141,14 +148,15 @@ public class Notes74Algos {
      * @return true if any values are repeated, false otherwise
      */
     public static boolean hasDuplicates(ArrayList<String> list) {
-      for(int i =0; i < list.size()-1; i++){
-          for(int j = i+1; j < list.size(); j++){
-              if(list.get(i).equalsIgnoreCase(list.get(j))){
-                  return true;
-              }
-          }
-      }
-      return false;
+        for(int i = 0; i < list.size() - 1; i++){
+            String curr = list.get(i);
+            for(int j = i + 1; j < list.size(); j++){
+                if(curr.equals(list.get(j))){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /**
@@ -158,8 +166,8 @@ public class Notes74Algos {
      * @return new ArrayList of Strings in reverse order
      */
     public static ArrayList<String> revArrayList(ArrayList<String> list) {
-       ArrayList<String> newList = new ArrayList<>();
-        for(int i = list.size()-1; i >= 0; i++){
+        ArrayList<String> newList = new ArrayList<>();
+        for(int i = list.size()-1; i >= 0; i--){
             newList.add(list.get(i));
         }
         return newList;
@@ -170,14 +178,27 @@ public class Notes74Algos {
      * to index list.size() - 1.
      * @param list
      */
+    //0, 1, 2
+    //1 2
+    //1 2 0
     public static void shiftLeft(ArrayList<String> list) {
         String first = list.get(0);
-        for(int i = 0; i < list.size()-1; i++){
-            list.set(i,list.get(i+1));
+        for(int i = 0; i < list.size() -1; i++){
+            list.set(i, list.get(i+1));
         }
         list.set(list.size()-1, first);
     }
+    //0,1,2,4
+    //4 0 1 2
+    public static void shiftRight(ArrayList<String> list){
+        String last = list.get(list.size()-1);
+        for(int i = list.size()-1; i > 0; i--){
+            list.set(i, list.get(i-1));
+        }
+        list.set(0, last);
+        }
+
+    }
 
 
-}
 

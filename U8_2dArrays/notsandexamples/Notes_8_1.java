@@ -49,6 +49,18 @@ public class Notes_8_1 {
             ..
             6 12 ...                 60
         */
+        int modifyStart = 2;
+        int multiplier = 2;
+        for(int r = 0; r < 6; r++){
+            for(int c = 0; c < 10; c++){
+                System.out.print(modifyStart);
+                modifyStart = modifyStart + multiplier;
+            }
+            multiplier++;
+            modifyStart = modifyStart/10 + 1;
+            System.out.println();
+        }
+
 
         for(int i = 0; i < multiples.length;i++){
             for(int j = 0; j < multiples[0].length; j++){

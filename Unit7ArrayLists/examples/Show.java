@@ -7,6 +7,14 @@ public class Show {
     private String artistName;
     private String location;
 
+    /**
+     * instatiates instance variables based on what is read in by the files in the ticketMaster class
+     * @param date
+     * @param price
+     * @param quantityOfTickets
+     * @param artistName
+     * @param location
+     */
     public Show(String date, double price, int quantityOfTickets, String artistName, String location) {
         this.date = date;
         this.price = price;
@@ -15,6 +23,11 @@ public class Show {
         this.location = location;
     }
 
+    /**
+     * Creates a correctly formatted output of a list of shows, done elaborately using space counting.
+     * You said this was fine though I know there is a much shorter solution
+     * @return String value
+     */
     public String toString(){
         //String output = date + "" + price + "\t\t" + quantityOfTickets + "\t\t" + artistName;
         String output = date;
